@@ -1,0 +1,41 @@
+<launch>
+  <!-- Load default controllers -->
+  <include file="$(find reem_controller_configuration)/launch/default_controllers.launch"/>
+
+  <!-- Robot state publisher -->
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="50.0"/>
+    <param name="tf_prefix" type="string" value=""/>
+  </node>
+
+  <!-- TF lookup -->
+  <node pkg="tf_lookup" type="tf_lookup" name="tf_lookup" output="screen"/>
+
+  <!-- Twist mux -->
+  <include file="$(find reem_bringup)/launch/twist_mux.launch"/>
+
+  <!-- Dynamic footprint -->
+  <include file="$(find reem_bringup)/launch/dynamic_footprint.launch"/>
+
+  <!-- Speed limit -->
+  <include file="$(find speed_limit)/launch/speed_limit.launch">
+    <arg name="config" value="$(find reem_bringup)/config/speed_limit.yaml"/>
+  </include>
+
+  <!-- Bumper, IR and Sonar to cloud -->
+  <include file="$(find sensor_to_cloud)/launch/bumper_to_cloud.launch"/>
+  <include file="$(find sensor_to_cloud)/launch/ir_to_cloud.launch"/>
+  <include file="$(find sensor_to_cloud)/launch/sonar_to_cloud.launch"/>
+
+  <!-- Emergency Stop -->
+  <include file="$(find reem_2dnav)/launch/emergency_stop.launch"/>
+
+  <!-- Joystick controller -->
+  <include file="$(find reem_bringup)/launch/joystick_teleop.launch"/>
+
+  <!-- Motion planning -->
+  <include file="$(find reem_moveit_config)/launch/move_group.launch"/>
+
+  <!-- Pre-recorded motions executor -->
+  <include file="$(find reem_bringup)/launch/play_motion.launch"/>
+</launch>

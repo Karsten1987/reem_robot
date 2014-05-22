@@ -1,0 +1,67 @@
+speed_limit:
+  reporters:
+    reem_ears:
+      type: reem_led
+      limit_color:
+        rgb: [0.8, 0.5, 0.2]
+      bypass_color:
+        rgb: [1.0, 0.0, 0.0]
+        blinking: true
+    reem_web:
+      type: reem_topic
+  limiters:
+    base_laser:
+      type: laser
+      topic: scan_filtered
+      obstacle_max_dist: 1.5
+      stop_dist: 0.3
+      speed_factor: 0.5
+      fixed: true
+      data_timeout: 1.0  # ears will flash if no data is received for 1.0s
+
+    torso_laser:
+      type: floorscan
+      topic: hokuyo/LAS_01
+      hole_tolerance      : 0.1  # [m] how deep a hole before stopping (default 0.1)
+      fov                 : 1.0  # [rad] field of view                 (default 1.0)
+      fixed: true
+
+    base_sonars:
+      type: range
+      topic: sonar_base
+      obstacle_max_dist: 0.6
+      stop_dist: 0.1
+      speed_factor: 0.3
+      blacklist: []
+      whitelist: []
+      fixed: true
+
+    torso_sonars:
+      type: range
+      topic: sonar_torso
+      obstacle_max_dist: 0.7
+      stop_dist: 0.1
+      speed_factor: 0.5
+      blacklist: []
+      whitelist: []
+      fixed: false
+
+#    base_irs:
+#      type: range
+#      topic: ir_base
+#      obstacle_max_dist: 1.0
+#      stop_dist: 0.2
+#      speed_factor: 0.5
+#      blacklist: []
+#      whitelist: []
+#      fixed: true
+
+    base_bumpers:
+      type: bumper
+      topic: bumper_base
+      obstacle_max_dist: 1.0
+      stop_dist: 1.0
+      speed_factor: 1.0
+      blacklist: []
+      whitelist: []
+      fixed: true
