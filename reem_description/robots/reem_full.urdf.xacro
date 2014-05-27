@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <!--
 
+<<<<<<< HEAD
   Copyright (c) 2011-2014, PAL Robotics, S.L.
+=======
+  Copyright (c) 2011, PAL Robotics, S.L.
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
   All rights reserved.
 
   This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
@@ -65,3 +69,8 @@
   </xacro:reem_back_camera>
 
 </robot>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93

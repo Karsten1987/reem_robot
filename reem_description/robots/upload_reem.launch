@@ -1,10 +1,19 @@
 <launch>
+<<<<<<< HEAD
   <arg name="robot" default="full"/>
+=======
+  <arg name="robot" default="full" />
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
 
   <!-- Default, send standard REEM URDF model to ROS Param Server -->
   <param name="robot_description" command="$(find xacro)/xacro.py
     '$(find reem_description)/robots/reem_$(arg robot).urdf.xacro'" />
 
   <!-- Joint limits -->
+<<<<<<< HEAD
   <rosparam command="load" file="$(find reem_description)/config/joint_limits.yaml"/>
 </launch>
+=======
+  <rosparam command="load" file="$(find reem_description)/config/joint_limits.yaml" />
+</launch>
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93

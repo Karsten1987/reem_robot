@@ -69,10 +69,13 @@
   <xacro:reem_arm name="arm" parent="torso_2_link" side="right" reflect="1.0"  />
   <xacro:reem_arm name="arm" parent="torso_2_link" side="left"  reflect="-1.0" />
 
+<<<<<<< HEAD
   <xacro:reem_hand name="hand" parent="arm_right_tool_link" side="right" reflect="1.0"  />
   <xacro:reem_hand name="hand" parent="arm_left_tool_link" side="left"  reflect="-1.0" />
 
 
+=======
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
     <!--************************-->
     <!--        CAMERA          -->
     <!--************************-->

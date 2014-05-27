@@ -3,10 +3,15 @@ teleop:
     type: topic
     message_type: geometry_msgs/Twist
     topic_name: cmd_vel
+<<<<<<< HEAD
+=======
+    deadman_buttons: [4]
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
     axis_mappings:
       -
         axis: 1
         target: linear.x
+<<<<<<< HEAD
         scale: 1.0
       -
         axis: 2
@@ -27,6 +32,13 @@ teleop:
     type: action
     action_name: joy_turbo_increase
     buttons: [3, 4, 5]
+=======
+        scale: 0.3
+      -
+        axis: 0
+        target: angular.z
+        scale: 0.5
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
 
   home:
     type: action
@@ -53,4 +65,8 @@ teleop:
       motion_name: hands_down
       reach_time:
         secs: 3
+<<<<<<< HEAD
     buttons: [8, 2]
+=======
+    buttons: [8, 2]
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93

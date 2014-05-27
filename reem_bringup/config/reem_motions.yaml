@@ -13,6 +13,7 @@ play_motion:
         name: Arms T
         usage: posture
         description: Both arms set straight pointing sideways at 45 degrees.
+<<<<<<< HEAD
     box_storage:
       joints: [torso_1_joint, torso_2_joint, head_1_joint, head_2_joint, arm_left_1_joint,
         arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,
@@ -208,11 +209,15 @@ play_motion:
 #         usage: specific
 #         description: Moves an imaginary steering wheel.
     carry_small_object:
+=======
+    bow:
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
       joints: [torso_1_joint, torso_2_joint, head_1_joint, head_2_joint, arm_left_1_joint,
         arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,
         arm_left_7_joint, arm_right_1_joint, arm_right_2_joint, arm_right_3_joint,
         arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint]
       points:
+<<<<<<< HEAD
       - positions: [0.0, 0.1, 0.0, 0.25, 1.0, 0.2, -1.2, 1.5, 0.9, 0.9, 1.4, 1.0,
           0.2, -1.2, 1.5, 0.9, 0.9, 1.4]
         time_from_start: 0.0
@@ -1587,11 +1592,43 @@ play_motion:
         usage: showSelf
         description: Shows the cargo platform in the back with the left hand while moving the torso and looking intially to the platform and then to the front.
     show_size_large:
+=======
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.35, 0.17, -0.9, 0.8, 0.1, -0.4, 0.0, 0.35,
+          0.17, -0.9, 0.8, 0.1, -0.4, 0.0]
+        time_from_start: 0.0
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.35, -0.5, 0.6109, 0.0, 0.0, 0.0, 0.0,
+          0.35, -0.5, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 1.0
+      - positions: [0.0, 0.0, 0.0, 0.0, -0.4, 0.25, -0.1, 0.6109, 0.0, 0.0, 0.0, -0.4,
+          0.25, -0.1, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 1.85
+      - positions: [0.0, 0.4, 0.0, 0.3, -0.1, 0.1, -0.05, 0.6109, 0.0, 0.0, 0.0, -0.1,
+          0.1, -0.05, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 3.35
+      - positions: [0.0, 0.4, 0.0, 0.3, -0.1, 0.1, -0.05, 0.6109, 0.0, 0.0, 0.0, -0.1,
+          0.1, -0.05, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 3.65
+      - positions: [0.0, 0.0, 0.0, 0.0, -0.4, 0.1, -0.05, 0.6109, 0.0, 0.0, 0.0, -0.4,
+          0.1, -0.05, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 4.65
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.35, -0.5, 0.6109, 0.0, 0.0, 0.0, 0.0,
+          0.35, -0.5, 0.6109, 0.0, 0.0, 0.0]
+        time_from_start: 5.5
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.35, 0.17, -0.9, 0.8, 0.1, -0.4, 0.0, 0.35,
+          0.17, -0.9, 0.8, 0.1, -0.4, 0.0]
+        time_from_start: 6.5
+      meta:
+        name: Bow
+        usage: greet
+        description: Makes a short reverence with both arms back.
+    home:
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
       joints: [torso_1_joint, torso_2_joint, head_1_joint, head_2_joint, arm_left_1_joint,
         arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,
         arm_left_7_joint, arm_right_1_joint, arm_right_2_joint, arm_right_3_joint,
         arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint]
       points:
+<<<<<<< HEAD
       - positions: [0.0, 0.0, -0.4, 0.25, -0.1, 0.6109, 0.0, 0.0, 0.0, -0.4,
           0.25, -0.1, 0.6109, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         time_from_start: 0.0
@@ -1765,11 +1802,22 @@ play_motion:
         usage: greet
         description: Waves with right hand.
     wave_present:
+=======
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+          0.0, 0.0, 0.0, 0.0, 0.0]
+        time_from_start: 0.0
+      meta:
+        name: Home
+        usage: posture
+        description: Both arms down and completely stretched.
+    wave:
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
       joints: [torso_1_joint, torso_2_joint, head_1_joint, head_2_joint, arm_left_1_joint,
         arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint,
         arm_left_7_joint, arm_right_1_joint, arm_right_2_joint, arm_right_3_joint,
         arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint]
       points:
+<<<<<<< HEAD
       - positions: [0.0, 0.0, -0.4, 0.25, -0.1, 0.6109, 0.0, 0.0, 0.0, -0.4,
           0.25, -0.1, 0.6109, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         time_from_start: 0.0
@@ -1822,3 +1870,24 @@ play_motion:
         name: 'Yes'
         usage: reply
         description: Moves head up-down.
+=======
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.35, 0.17, -0.9, 0.8, 0.1, -0.4, 0.0, 0.35,
+          0.17, -0.9, 0.8, 0.1, -0.4, 0.0]
+        time_from_start: 0.0
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.1, 0.15, 0.0, 0.3, 0.0, 0.0, 0.0, 0.4, 0.15,
+          0.4, 2.0, -1.4, 0.6, 0.0]
+        time_from_start: 1.5
+      - positions: [0.0, 0.0, 0.0, 0.25, 0.1, 0.15, 0.0, 0.3, 0.0, 0.0, 0.0, 0.4,
+          0.4, -0.4, 2.0, -1.4, 0.6, 0.0]
+        time_from_start: 2.3
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.1, 0.15, 0.0, 0.3, 0.0, 0.0, 0.0, 0.4, 0.15,
+          0.4, 2.0, -1.4, 0.6, 0.0]
+        time_from_start: 3.3
+      - positions: [0.0, 0.0, 0.0, 0.0, 0.35, 0.17, -0.9, 0.8, 0.1, -0.4, 0.0, 0.35,
+          0.17, -0.9, 0.8, 0.1, -0.4, 0.0]
+        time_from_start: 4.3
+      meta:
+        name: Wave
+        usage: greet
+        description: Waves with right hand and nods.
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93

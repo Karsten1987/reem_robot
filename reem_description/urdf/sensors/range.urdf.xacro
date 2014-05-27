@@ -14,6 +14,10 @@
   <xacro:include filename="$(find reem_description)/urdf/sensors/range.gazebo.xacro" />
 
   <xacro:macro name="range_reem" params="name parent *origin ros_topic update_rate maxRange minRange fov radiation">
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
     <link name="${name}_link">
       <inertial>
         <mass value="0.001" />

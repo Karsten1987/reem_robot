@@ -13,7 +13,10 @@
   <run_depend>reem_description</run_depend>
   <run_depend>reem_bringup</run_depend>
   <run_depend>reem_controller_configuration</run_depend>
+<<<<<<< HEAD
   <run_depend>reem_hardware</run_depend>
+=======
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
 
   <export>
     <metapackage/>

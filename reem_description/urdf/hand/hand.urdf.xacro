@@ -33,7 +33,11 @@
 
       <safety_controller k_position="20"
                          k_velocity="20"
+<<<<<<< HEAD
                          soft_lower_limit="${  0.0 * deg_to_rad}"
+=======
+                         soft_lower_limit="${  0.0 * deg_to_rad + hand_eps}"
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
                          soft_upper_limit="${250.0 * deg_to_rad - hand_eps}" />
     </joint>
 
@@ -229,9 +233,15 @@
         <material name="LightGrey" />
       </visual>
       <collision>
+<<<<<<< HEAD
         <origin xyz="0.005 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://reem_description/meshes/hand/hand_thumb_collision.stl" scale="1.1 1.1 ${-reflect * 1.1}" />
+=======
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://reem_description/meshes/hand/hand_thumb_collision.stl" scale="1 1 ${-reflect}" />
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
         </geometry>
       </collision>
     </link>
@@ -268,6 +278,7 @@
       </inertial>
     </link>
 
+<<<<<<< HEAD
     <!-- SOT Grasping frame -->
     <!-- grasp planner will approach along x-axis -->
     <joint name="${name}_${side}_sot_grasping_frame_joint" type="fixed">
@@ -285,6 +296,8 @@
       </inertial>
     </link>
 
+=======
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
     <xacro:hand_thumb_transmission name="${name}_${side}_thumb" reduction="1" />
 
     <!-- Index finger -->

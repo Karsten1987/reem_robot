@@ -13,6 +13,7 @@
   <run_depend>reem_controller_configuration</run_depend>
   <run_depend>reem_description</run_depend>
   <run_depend>robot_state_publisher</run_depend>
+<<<<<<< HEAD
   <run_depend>reem_head_action</run_depend>
   <run_depend>tf_lookup</run_depend>
   <run_depend>sensor_to_cloud</run_depend>
@@ -20,5 +21,12 @@
   <run_depend>twist_mux</run_depend>
   <run_depend>joy_teleop</run_depend>
   <run_depend>play_motion</run_depend>
+=======
+  <!-- <run_depend>head_action</run_depend> -->
+  <run_depend>joy_teleop</run_depend>
+  <run_depend>joy</run_depend>
+  <run_depend>play_motion</run_depend>
+  <run_depend>reem_moveit_config</run_depend>
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
 
 </package>

@@ -2,7 +2,11 @@
   <!-- Diff drive controller parameters -->
   <rosparam command="load" file="$(find reem_controller_configuration)/config/mobile_base_controller.yaml"/>
 
+<<<<<<< HEAD
   <!-- Joint trajectory controllers parameters -->
+=======
+  <!-- Joint trajectory controllers -->
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
   <rosparam command="load" file="$(find reem_controller_configuration)/config/joint_trajectory_controllers.yaml" />
 
   <!-- Robot model -->

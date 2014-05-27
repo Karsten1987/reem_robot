@@ -8,6 +8,7 @@
     <param name="tf_prefix" type="string" value=""/>
   </node>
 
+<<<<<<< HEAD
   <!-- TF lookup -->
   <node pkg="tf_lookup" type="tf_lookup" name="tf_lookup" output="screen"/>
 
@@ -30,6 +31,8 @@
   <!-- Emergency Stop -->
   <include file="$(find reem_2dnav)/launch/emergency_stop.launch"/>
 
+=======
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
   <!-- Joystick controller -->
   <include file="$(find reem_bringup)/launch/joystick_teleop.launch"/>
 
@@ -38,4 +41,8 @@
 
   <!-- Pre-recorded motions executor -->
   <include file="$(find reem_bringup)/launch/play_motion.launch"/>
+<<<<<<< HEAD
 </launch>
+=======
+</launch>
+>>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
