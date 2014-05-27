@@ -278,7 +278,6 @@
       </inertial>
     </link>
 
-<<<<<<< HEAD
     <!-- SOT Grasping frame -->
     <!-- grasp planner will approach along x-axis -->
     <joint name="${name}_${side}_sot_grasping_frame_joint" type="fixed">
@@ -296,8 +295,6 @@
       </inertial>
     </link>
 
-=======
->>>>>>> 2cec3cf795ed33f495b8eeb585037e90a0d9ca93
     <xacro:hand_thumb_transmission name="${name}_${side}_thumb" reduction="1" />
 
     <!-- Index finger -->
